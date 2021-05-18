@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:site_name" content="Expense Tracker">
+    <meta property="og:title" content="Expense Tracker">
+    <meta property="og:author" content="Jose Alejandro Concepción Alvarez">
+    <meta property="og:description" content="Simple Vanilla JavaScript application to manage our income and expenses and obtain a balance sheet.">
+    <meta property="og:image" content="http://expense-tracker-js.surge.sh/share.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta property="og:url" content="http://expense-tracker-js.surge.sh/">
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+    <h1 class="header">Gestor de gastos</h1>
+    <div class="container">
+        <div class="your-balance">
+            <p>
+                Tu balance
+            </p>
+            <div id="your-balance">
+                $150.00
+            </div>
+        </div>
+
+
+        <div id="balance-card">
+            <div id="income">
+                <p style="text-transform: uppercase;">Ingreso</p>
+                <p class="green" style="margin-top: 0px; font-size: 18px;">$300.00</p>
+            </div>
+
+            <div id="expense">
+                <p style="text-transform: uppercase;">Gasto</p>
+                <p class="red" style="margin-top: 0px;font-size: 18px;">$300.00</p>
+            </div>
+        </div>
+
+        <div id="history">
+            <h3> Histórico</h3>
+        </div>
+
+        <div id="transaction">
+            <h3> Adiciona una transacción</h3>
+
+            <form id="form-transaction" class="form">
+                <div class="form-item">
+                    <label for="text">Texto</label>
+                    <input id="text" type="text" placeholder="escriba un mensaje" name="text">
+
+                </div>
+                <div class="form-item">
+                    <label for="amount">Cantidad
+                        <p>(puede ser nagativo (-) o positivo (+))</p>
+                    </label>
+                    <input id="amount" type="number" name="amount" placeholder="entre la cantidad">
+                </div>
+                <div class="form-item">
+                    <button id="add" type="button"> Adicionar transacción</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="github-section">
+        <a href="https://github.com/josealejandro2928/movie-seat-booking-js" target="_blank"> github repository</a>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
